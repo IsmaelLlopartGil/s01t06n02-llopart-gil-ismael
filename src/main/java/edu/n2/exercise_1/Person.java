@@ -1,4 +1,4 @@
-package edu.n6.exercise_2;
+package edu.n2.exercise_1;
 
 import java.io.Serializable;
 

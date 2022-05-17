@@ -1,4 +1,4 @@
-package edu.n6.exercise_1;
+package edu.n2.exercise_1;
 
 import java.util.ArrayList;
 
@@ -14,9 +14,9 @@ public class App {
 		
 	//	GenericMethods.printArguments(person, string, integer);
 	//	GenericMethods.printArguments(integer, person, string);
-		
-	//	GenericMethods.printArguments(character, person, personList);
-		GenericMethods.printArguments(string, integer, person);
+		GenericMethods.printArguments(string, character, integer);
+		GenericMethods.printArguments(string, person, personList);
+
 
 	}
 
