@@ -3,8 +3,10 @@ package edu.n2.exercise_2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class App {
+@SuppressWarnings("rawtypes")
+public class App  {
 
+	@SuppressWarnings("unchecked")
 	private void run() {
 
 		Person person = new Person("Robert", "Jordan", 74);
@@ -18,13 +20,15 @@ public class App {
 		list.add(string);
 		list.add(person);
 		
-		List<Person> personList=new ArrayList<Person>();
+		List personList=new ArrayList<Person>();
+
 		personList.add(person);
 		personList.add(new Person ("Another", "Person", 87));
 		personList.add(new Person ("Last", "Person", 34));
 
 		GenericMethods.printArguments(list);
 		GenericMethods.printArguments(personList);
+		
 	}
 
 	public static void main(String[] args) {
