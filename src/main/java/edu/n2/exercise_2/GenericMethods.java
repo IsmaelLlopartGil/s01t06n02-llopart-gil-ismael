@@ -4,7 +4,7 @@ import java.util.List;
 
 public class GenericMethods {
 	
-	public static <T> void printArguments (List<? super T> list) {
+	public static void printArguments (List<?> list) {
 		
 		for (Object object : list) {
 			System.out.println(object);
