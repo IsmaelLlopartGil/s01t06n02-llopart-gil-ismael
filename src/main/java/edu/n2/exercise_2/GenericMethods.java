@@ -4,10 +4,10 @@ import java.util.List;
 
 public class GenericMethods {
 	
-	public static void printArguments (List<?> list) {
+	public static <T> void printArguments (List<T> list) {
 		
-		for (Object object : list) {
-			System.out.println(object);
+		for (T element : list) {
+			System.out.println(element);
 		}
 	}
 }
