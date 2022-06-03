@@ -1,27 +1,25 @@
 package edu.n2.exercise_2;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class App  {
 
 	private void run() {
-
-		Person person = new Person("Robert", "Jordan", 74);
-		String string = "Cadena de text";
 			
 		List<Person> personList=new ArrayList<>();
-		personList.add(person);
+		personList.add(new Person("Robert", "Jordan", 74));
 		personList.add(new Person ("Another", "Person", 87));
 		personList.add(new Person ("Last", "Person", 34));
-		GenericMethods.printArguments(personList);
 		
-		List<String> stringList = new ArrayList<>();
-		stringList.add(string);
-		stringList.add("2 cadena");
-		stringList.add("3 cadena");
-		stringList.add("4 cadena");
-		GenericMethods.printArguments(stringList);		
+		GenericMethods.printArguments(
+				personList.get(0),
+				personList.get(1),
+				personList.get(2));
+		
+		GenericMethods.printArguments(
+				personList.get(0),
+				personList.get(1));
+
 	}
 
 	public static void main(String[] args) {
